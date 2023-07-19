@@ -45,7 +45,7 @@ class MyPage extends StatelessWidget {
       appBar: AppBar(title: Text("ListViewBuilder"),
       titleSpacing: 30,
       ),
-
+      // use grid view in dynamic
      body: ListView.builder(
        itemCount: MyItems.length, // myitem length is listview length.
        itemBuilder: (context,index){
