@@ -46,7 +46,12 @@ class MyPage extends StatelessWidget {
       titleSpacing: 30,
       ),
       // use grid view in dynamic
-     body: ListView.builder(
+     body: GridView.builder(
+       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+         crossAxisCount: 2,
+         crossAxisSpacing: 1,
+         childAspectRatio: 1.8
+       ),
        itemCount: MyItems.length, // myitem length is listview length.
        itemBuilder: (context,index){
          return GestureDetector(
